@@ -40,7 +40,7 @@ export default function ServiceGrid() {
             });
 
             if (gridRef.current) {
-                gsap.from(gridRef.current.children, {
+                gsap.from((gridRef.current as any).children, {
                     y: 30,
                     opacity: 0,
                     duration: 0.6,

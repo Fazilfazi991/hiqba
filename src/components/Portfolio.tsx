@@ -33,7 +33,7 @@ export default function Portfolio() {
             });
 
             if (gridRef.current) {
-                gsap.from(gridRef.current.children, {
+                gsap.from((gridRef.current as any).children, {
                     y: 50,
                     opacity: 0,
                     duration: 0.8,
