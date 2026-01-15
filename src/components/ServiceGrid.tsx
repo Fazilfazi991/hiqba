@@ -23,9 +23,9 @@ const services = [
 ];
 
 export default function ServiceGrid() {
-    const sectionRef = useRef(null);
-    const titleRef = useRef(null);
-    const gridRef = useRef(null);
+    const sectionRef = useRef<HTMLElement>(null);
+    const titleRef = useRef<HTMLHeadingElement>(null);
+    const gridRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {

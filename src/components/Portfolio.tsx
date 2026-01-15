@@ -16,9 +16,9 @@ const projects = [
 ];
 
 export default function Portfolio() {
-    const sectionRef = useRef(null);
-    const headerRef = useRef(null);
-    const gridRef = useRef(null);
+    const sectionRef = useRef<HTMLElement>(null);
+    const headerRef = useRef<HTMLDivElement>(null);
+    const gridRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
