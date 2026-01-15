@@ -39,16 +39,18 @@ export default function ServiceGrid() {
                 }
             });
 
-            gsap.from(gridRef.current.children, {
-                y: 30,
-                opacity: 0,
-                duration: 0.6,
-                stagger: 0.05,
-                scrollTrigger: {
-                    trigger: gridRef.current,
-                    start: "top 85%",
-                }
-            });
+            if (gridRef.current) {
+                gsap.from(gridRef.current.children, {
+                    y: 30,
+                    opacity: 0,
+                    duration: 0.6,
+                    stagger: 0.05,
+                    scrollTrigger: {
+                        trigger: gridRef.current,
+                        start: "top 85%",
+                    }
+                });
+            }
         }, sectionRef);
         return () => ctx.revert();
     }, []);

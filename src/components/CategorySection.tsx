@@ -42,16 +42,18 @@ export default function CategorySection() {
                 }
             });
 
-            gsap.from(gridRef.current.children, {
-                y: 50,
-                opacity: 0,
-                duration: 0.8,
-                stagger: 0.2,
-                scrollTrigger: {
-                    trigger: gridRef.current,
-                    start: "top 85%",
-                }
-            });
+            if (gridRef.current) {
+                gsap.from(gridRef.current.children, {
+                    y: 50,
+                    opacity: 0,
+                    duration: 0.8,
+                    stagger: 0.2,
+                    scrollTrigger: {
+                        trigger: gridRef.current,
+                        start: "top 85%",
+                    }
+                });
+            }
         }, sectionRef);
 
         return () => ctx.revert();
