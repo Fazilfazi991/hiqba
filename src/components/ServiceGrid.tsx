@@ -60,7 +60,7 @@ export default function ServiceGrid() {
             <h2 className={styles.title} ref={titleRef}>The Creative Arena</h2>
             <div className={styles.grid} ref={gridRef}>
                 {services.map((service, index) => (
-                    <div key={index} className={`${styles.card} ${service.className} hoverable`}>
+                    <div key={index} className={`${styles.card} hoverable`}>
                         <div className={styles.background}>
                             {/* Using img for debugging */}
                             <img
