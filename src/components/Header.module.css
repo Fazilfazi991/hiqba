@@ -1,0 +1,89 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topBar {
+    background: var(--primary-navy);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    padding: 8px 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topBar span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header {
+    width: 100%;
+    padding: 10px 40px;
+    /* Reduced vertical padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #000, var(--primary-navy));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.logoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    height: 60px;
+    /* Reduced height from 80px */
+    width: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navLink {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navLink:hover {
+    color: var(--accent-cyan);
+}
+
+.ctaButton {
+    background: var(--accent-gradient);
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 174, 239, 0.4);
+}
