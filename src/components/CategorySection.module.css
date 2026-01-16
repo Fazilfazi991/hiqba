@@ -84,3 +84,29 @@
 .card:hover .link {
     color: var(--primary-navy);
 }
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        /* Force single column on mobile */
+        gap: 20px;
+    }
+
+    .card {
+        min-height: auto;
+        /* Remove fixed height constraint */
+    }
+
+    .imageWrapper {
+        height: 180px;
+    }
+}
